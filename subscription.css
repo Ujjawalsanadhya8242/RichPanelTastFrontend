@@ -1,0 +1,156 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: left;
+    width: 250px;
+}
+
+.plan h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.select-plan {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.select-plan:hover {
+    background-color: #0056b3;
+}
+
+#swap-button {
+    margin-top: 20px;
+    background-color: #084a83;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height:50px;
+}
+
+#swap-button:hover {
+    background-color: #545b62;
+}
+/* ... (your existing styles) ... */
+
+.toggle-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-option {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-option:focus {
+    outline: none;
+}
+
+#yearly-button {
+    margin-left: 10px;
+}
+/* ... (your existing styles) ... */
+
+.selected-plan-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.action-button {
+    margin-top: 10px;
+    background-color: white;
+    color: #4d27d8;
+    border: 2px solid blue; 
+    padding: 8px 16px;
+    border-radius: 4px blue;
+    cursor: pointer;
+}
+#active-button {
+    margin-top: 2px;
+    background-color: #8db6dd;
+    color: #0e1bd8;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 0px;
+    cursor: pointer;
+    height:20px;
+}
+
+.action-button:hover {
+    background-color:rgb(237, 240, 241);
+  
+}
+
+/* ... (your existing styles) ... */
+/* ... (your existing styles) ... */
+.spcontainer {
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+.cancel-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.cancel-action {
+    color: #292cd1;
+    cursor: pointer;
+    font-style: arial;
+    font-size: 15px; 
+    float:right;
+}
+
+/* ... (your existing styles) ... */
+

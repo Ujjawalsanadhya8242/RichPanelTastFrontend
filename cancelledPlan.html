@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscription.css">
+    <!-- ... (head content) ... -->
+</head>
+<body>
+    <div class="spcontainer">
+        <h2>Current Plan Details <button id="active-button" style="color: red; background-color: white;"><b>Cancelled</b></button></h2>
+             <!-- <a class="cancel-action" >Cancelled</a></h2> -->
+        <!-- <p class="cancel-link"> <a id="cancel-plan" class="cancel-action">Cancel</a></p> -->
+        <div class="selected-plan-details">
+            <h2>Basic</h2>
+            <p>Phone+Tablet</p>
+            <h1>₹ 2,000/yr</h1>
+            
+            <button id="change-plan" class="action-button" >Change Plan</button>
+
+            <p>Your Subscription was cancelled and you loose access to service.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var form = document.getElementById("change-plan");
+
+       form.addEventListener('click', function(e){
+           e.preventDefault();
+           document.location.replace("SubscriptionPlanYearly.html");
+       })</script>
+</body>
+</html>

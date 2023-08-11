@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Screen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="pcontainer" >
+        <div class="payment-container">
+            <div class="payment-form">
+                <h2 class="left-content">Complete Payment</h2><br><br>
+                <p class="left-content">Enter your debit card or credit card details below</p><br><br><br>
+               
+                <span class="card-icon"></span>
+                <input type="text" placeholder="Card Number                  
+                
+                
+                
+                          MM/YY CVV"  class="card-number">
+                
+                
+                <button class="btn btn-confirm" id="confirmPayment">Confirm Payment</button>
+            </div>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="plan-info">
+                    <div class="plan-name">Plan Name</div>
+                    <div class="plan-value"><b>Premium</b></div>
+                </div>
+                <div class="plan-info">
+                    <div class="plan-name">Billing Cycle</div>
+                    <div class="plan-value"><b>Monthly</b></div>
+                </div>
+                <div class="plan-info">
+                    <div class="plan-name">Plan Price</div>
+                    <div class="plan-value"><b>$10</b></div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        var form = document.getElementById("confirmPayment");
+
+       form.addEventListener('click', function(e){
+           e.preventDefault();
+           document.location.replace("selectedPlan.html");
+       })</script>
+</body>
+</html>
+

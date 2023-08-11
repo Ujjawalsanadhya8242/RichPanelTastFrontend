@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subscription.css">
+    <title>Subscription Plans</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Subscription Plan</h1>
+        <div class="plans" id="plan">
+            <div class="plan">
+                <h2>Basic</h2>
+                <p>Monthly Price: 100 INR</p>
+                
+                <p>Video Quality: Good (480p)</p>
+                <p>Devices: Phone</p>
+                <p>Screens: 1</p>
+                <button class="select-plan" data-monthly="100" data-yearly="1000">Select</button>
+            </div>
+            <div class="plan">
+                <h2>Standard</h2>
+                <p>Monthly Price: 200 INR</p>
+               
+                <p>Video Quality: Good (720p)</p>
+                <p>Devices: Phone+Tablet</p>
+                <p>Screens: 1</p>
+                <button class="select-plan" data-monthly="200" data-yearly="2000" >Select</button>
+            </div>
+            <div class="plan">
+                <h2>Premium</h2>
+                <p>Monthly Price: 500 INR</p>
+               
+                <p>Video Quality: Better (1080p)</p>
+                <p>Devices: Phone+Tablet+Computer</p>
+                <p>Screens: 2</p>
+                <button class="select-plan" data-monthly="500" data-yearly="5000">Select</button>
+            </div>
+            <div class="plan">
+                <h2>Regular</h2>
+                <p>Monthly Price: 700 INR</p>
+                
+                <p>Video Quality: Best (4K+HDR)</p>
+                <p>Devices: Phone+Tablet+TV</p>
+                <p>Screens: 3</p>
+                <button class="select-plan" data-monthly="700" data-yearly="7000">Select</button>
+            </div>
+        </div>
+        <a href="SubscriptionplanYearly.html" class="select-link">
+        <button id="swap-button">Yearly</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var form = document.getElementById("plan");
+
+       form.addEventListener('click', function(e){
+           e.preventDefault();
+           document.location.replace("paymentScreen.html");
+       })</script>
+</body>
+</html>
